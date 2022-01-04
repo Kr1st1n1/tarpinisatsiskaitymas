@@ -1,0 +1,105 @@
+.block-comments {
+  padding-top:50px;
+  padding-bottom:65px;
+  min-height:300px;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #f8f9fa;
+
+  .people {
+    width:100%;
+    text-align:center;
+    margin-bottom:50px;
+  }
+
+    .container {
+      display: flex;
+      flex-wrap:wrap;
+      max-width:1145px;
+
+      .contentblock {
+        display:flex;
+      }
+
+      .content {
+        margin: 0 auto;
+        display: inline-block;
+        text-align: center;
+        line-height: 1.5em;
+        width:33.3%;
+        padding-left:20px;
+        padding-right:20px;
+
+
+        p {
+          text-align: center;
+          font-size: 14px;
+          line-height: 1.5em;
+          color:grey;
+        }
+
+
+
+        .avatar {
+          margin-left:auto;
+          margin-right:auto;
+          margin-bottom:20px;
+        }
+
+        .avatar-1 {
+          position: relative;
+          width: 120px;
+          height: 120px;
+          background: url("../images/testimonials-1.jpg");
+          background-size: cover;
+          background-position: center;
+          border-radius: 100%;
+          box-shadow: 2px 4px 5px 2px #8c8c8cd4;
+          }
+
+          .avatar-2 {
+          position: relative;
+          width: 120px;
+          height: 120px;
+          background: url("../images/testimonials-2.jpg");
+          background-size: cover;
+          background-position: center;
+          border-radius: 100%;
+          box-shadow: 2px 4px 5px 2px #8c8c8cd4;
+        }
+
+          .avatar-3 {
+          position: relative;
+          width: 120px;
+          height: 120px;
+          background: url("../images/testimonials-3.jpg");
+          background-size: cover;
+          background-position: center;
+          border-radius: 100%;
+          box-shadow: 2px 4px 5px 2px #8c8c8cd4;
+      }
+    }
+  }
+}
+
+
+@media(max-width:768px) {
+
+.block-comments .container .contentblock {
+  flex-direction:column;
+  margin: 0 auto;
+  .content{
+    width:100%;
+    margin-bottom:45px;
+    padding-bottom: 30px;
+    &:last-child {
+      margin-bottom:0px;
+    }
+  }
+}
+
+}
